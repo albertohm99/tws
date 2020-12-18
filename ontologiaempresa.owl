@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/albertohm99/tws/main/ontologiaempresa.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/albertohm99/tws/main/ontologiaempresa.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/javi/ontologies/2014/10/albertoyainhoa"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="tws" IRI="http://www.semanticweb.org/javi/ontologies/2014/10/untitled-ontology-28"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="#Crucero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empresa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puerto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viaje"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#es_visitado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pasa_por"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#visita_a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripccion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#npaises"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#npuertos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stock"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefono"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titulo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#España"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Francia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ainhoa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alberto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crucero_niños"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crucero_romantico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#denia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#napoles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#santa_pola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#viaje_santorini"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Crucero"/>
+        <Class IRI="#Producto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viaje"/>
+        <Class IRI="#Producto"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#España"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Francia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pais"/>
+        <NamedIndividual IRI="#Italia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <NamedIndividual IRI="#ainhoa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+        <NamedIndividual IRI="#alberto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Empresa"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crucero"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crucero"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Puerto"/>
+        <NamedIndividual IRI="#denia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Puerto"/>
+        <NamedIndividual IRI="#napoles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Puerto"/>
+        <NamedIndividual IRI="#santa_pola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Viaje"/>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Viaje"/>
+        <NamedIndividual IRI="#viaje_santorini"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <NamedIndividual IRI="#alberto"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <NamedIndividual IRI="#denia"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <NamedIndividual IRI="#napoles"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <NamedIndividual IRI="#santa_pola"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#España"/>
+        <Literal>Pais bonito</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#España"/>
+        <Literal>España</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#Francia"/>
+        <Literal>Pais del vino y el queso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Francia"/>
+        <Literal>Francia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#Italia"/>
+        <Literal>Pais de la pasta y las pizzas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Italia"/>
+        <Literal>Italia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>20/12/2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>Ainhoa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>mujer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>Gallach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>Pau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal xml:lang="gmail.com">aihnoa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal>Ainhoa Pau Gallach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#ainhoa"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">666666666</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>28/03/1999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>Alberto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>Marin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>Herrero</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal xml:lang="gmail.com">alberto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal>Alberto Herrero Marin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefono"/>
+        <NamedIndividual IRI="#alberto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">666666666</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+        <Literal>Somos una empresa que ofrece todo tipo de viajes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+        <Literal xml:lang="gmail.com">caravanaquenopara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horario"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+        <Literal>De 9 a 21 h Lunes a Viernes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#caravanaquenopara"/>
+        <Literal>Caravana que no para</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+        <Literal>Experiencia inolvidable para los mas pequeños</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#npuertos"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">230.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stock"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#crucero_niños"/>
+        <Literal>Crucero para niños por el mediterraneo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+        <Literal>Crucero romantico para dos por el mediterraneo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#npuertos"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">230.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stock"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#crucero_romantico"/>
+        <Literal>Crucero romantico mediterraneo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#denia"/>
+        <Literal>Puerto costero de Alicante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#denia"/>
+        <Literal>Puerto de Denia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#denia"/>
+        <Literal>Denia,Alicante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#napoles"/>
+        <Literal>Puerto costero de Napoles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#napoles"/>
+        <Literal>Puerto de Napoli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#napoles"/>
+        <Literal>Napoles, Italia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripccion"/>
+        <NamedIndividual IRI="#santa_pola"/>
+        <Literal>Puerto  pequeño de Alicante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#santa_pola"/>
+        <Literal>Puerto de Santa Pola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#santa_pola"/>
+        <Literal>Santa Pola,Alicante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#npaises"/>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">230.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stock"/>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#viaje_amsterdam"/>
+        <Literal>Viaje por Amsterdam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#npaises"/>
+        <NamedIndividual IRI="#viaje_santorini"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#precio"/>
+        <NamedIndividual IRI="#viaje_santorini"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">230.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stock"/>
+        <NamedIndividual IRI="#viaje_santorini"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedInt">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titulo"/>
+        <NamedIndividual IRI="#viaje_santorini"/>
+        <Literal>Viaje a Santorini</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#es_visitado"/>
+        <ObjectProperty IRI="#visita_a"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <ObjectProperty IRI="#pasa_por"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class IRI="#Empresa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#es_visitado"/>
+        <Class IRI="#Pais"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <Class IRI="#Puerto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pasa_por"/>
+        <Class IRI="#Crucero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#visita_a"/>
+        <Class IRI="#Viaje"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="#Empresa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#es_visitado"/>
+        <Class IRI="#Viaje"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esta_en_ruta"/>
+        <Class IRI="#Crucero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pasa_por"/>
+        <Class IRI="#Puerto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#visita_a"/>
+        <Class IRI="#Pais"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/lastName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripccion"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripccion"/>
+        <Class IRI="#Pais"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripccion"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripccion"/>
+        <Class IRI="#Puerto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Pais"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Puerto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#npaises"/>
+        <Class IRI="#Viaje"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#npuertos"/>
+        <Class IRI="#Crucero"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precio"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stock"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titulo"/>
+        <Class IRI="#Producto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#Empresa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#Puerto"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripccion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#npaises"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#npuertos"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precio"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stock"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefono"/>
+        <Datatype abbreviatedIRI="xsd:unsignedLong"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#titulo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ubicacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#npaises</IRI>
+        <Literal>Numero de provincias a visitar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#npuertos</IRI>
+        <Literal>numero de puertos a visitar</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
